@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>新規登録ページ</title>
+  </head>
+  <body>
+    <div class="textlabel">
+      <h3>新規登録フォーム</h3>
+    </div>
+    <form action="../backend/index.php" method="post">
+      <div id="username">
+        <h2 class="textbox-label">ユーザーネーム</h2>
+        <input type="text" name="username" size="30" class="textbox-1" placeholder="ユーザーネームを入力してください">
+      </div>
+      <div id="password">
+        <h2 class="textbox-label">パスワード</h2>
+        <input type="password" name="password" size="30" class="textbox-1" placeholder="パスワードを入力してください">
+      </div>
+      <div id="login-key">
+        <input type="hidden" name="key" value="regist">
+      </div>
+      <input type="submit" class="button">
+    </form>
+    <a href="login.html" class="link">アカウントをお持ちの方はこちら</a>
+  </body>
+</html>
